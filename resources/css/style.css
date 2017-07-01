@@ -48,6 +48,10 @@ html {
   margin: 0;
 }
 
+.nav span {
+  display: none;
+}
+
 .nav li {
   display: inline;
   margin-left: 2rem;
@@ -121,6 +125,10 @@ html {
   margin-bottom: 5rem;
 }
 
+footer {
+  width: 100%;
+}
+
 footer .container {
   background-color: azure;
   padding: 4rem;
@@ -135,4 +143,148 @@ footer .container {
   height: 1.5rem;
   width: auto;
   margin-right: 1rem;
+}
+
+@media only screen and (max-width: 1050px) {
+  .container {
+    width: 100%;
+  }
+
+  #bigpicture {
+    height: 22rem;
+  }
+
+  #top-banner {
+    margin-top: 0;
+  }
+
+  .textbox {
+    display: flex;
+    background-color: white;
+    padding: 0.75em 4rem;
+    margin-top: 5rem;
+    margin-left: auto;
+    margin-right: 2rem;
+  }
+
+  .textbox h1 {
+    font-size: 1.33rem;
+  }
+
+  footer .container {
+    background-color: azure;
+    padding: 0;
+    margin: 0;
+  }
+
+  .bottom-logo {
+    display: flex;
+    align-items: center;
+    margin: 4rem;
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+  #bigpicture {
+    height: 17rem;
+    background-position: 20%;
+  }
+
+  .logo span {
+    display: none;
+  }
+
+  .nav ul {
+    display: none;
+  }
+
+  .nav span {
+    display: block;
+  }
+
+  .textbox {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 1rem 0;
+    margin-top: 9rem;
+    width: 100%;
+  }
+
+  .textbox h1 {
+    font-size: 1rem;
+  }
+
+  #features .container {
+    margin-top: 3.77rem;
+    margin-bottom: 3.77rem;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .box {
+    height: auto;
+  }
+
+  .box img.landscape {
+    padding-top: 1.54rem;
+  }
+
+  .box h3 {
+    font-size: 0.77rem;
+    margin-top: 1.2rem;
+  }
+
+  #phil-appt .container {
+    margin-top: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+  .blue {
+    width: 100%;
+    text-align: center;
+      padding: 0;
+    margin: 0;
+  }
+
+  .column {
+    width: 100%;
+    margin-bottom: 5rem;
+      }
+
+  .column p {
+    font-size: .77rem;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+  }
+
+  footer .container {
+    width: 100%;
+        margin: 0;
+    padding: 0;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    justify-content: center;
+  }
+
+  .bottom-logo span {
+    display: none;
+  }
+
+  .bottom-logo {
+        justify-content: center;
+    padding: 0;
+    margin: 0;
+    }
+
+  .bottom-logo img {
+    padding: 0;
+    margin: 0;
+  }
+
 }
